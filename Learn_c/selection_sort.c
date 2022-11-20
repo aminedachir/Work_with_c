@@ -1,14 +1,13 @@
 #include <stdio.h>
 int arr[4] = {6,0,4,1};
-int x,m,j,z;
+int z;
 int main()
 {
     for (int i=0;i<4;i++){
-        for(j=i+1;j<4;j++){
+        for(int j=i+1;j<4;j++){
             if(arr[j]<arr[i]){
-                m = arr[j];
                 z = arr[i];
-                arr[i] = m;
+                arr[i] = arr[j];
                 arr[j] = z;
             }
         }
