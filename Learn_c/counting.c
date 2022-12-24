@@ -1,16 +1,18 @@
 #include <stdio.h>
-int arr[6];
-int n,min,w;
+int n,w,np;
 int main()
 {
+    printf("ENTREZ NMR DES OBJECTS : ");
+    scanf("%d",&np);
+    int arr[np];
     printf("ENTREZ LES VALEURS DE LIST : \n");
-    for(int i=0;i<6;i++){
+    for(int i=0;i<np;i++){
         scanf("%d",&arr[i]);
     }
-    printf("ENTREZ NMR DES OBJECTS : ");
+    printf("ENTREZ NMR DES OBJECTS YOU want to order: ");
     scanf("%d",&n);
-    for(int i=0;i<=4;i++){
-        for(int j=i+1;j<=5;j++){
+    for(int i=0;i<=np-2;i++){
+        for(int j=i+1;j<=np;j++){
             if(arr[j]<arr[i]){
                 w = arr[i];
                 arr[i] = arr[j];
@@ -19,7 +21,7 @@ int main()
         }
     }
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d\n",arr[i]);
     }
 
 }
