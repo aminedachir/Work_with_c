@@ -1,17 +1,15 @@
 #include <stdio.h>
-int arr[4] = {6,0,4,1};
-int z,min;
+int arr[4] = {5,1,3,4};
+int z;
 int main()
 {
     for (int i=0;i<=2;i++){
-        min = i;
         for(int j=i+1;j<=3;j++){
-            if(arr[j]<arr[min]){
-                min = j;
+            if(arr[j]<arr[i]){
+                z = arr[i];
+                arr[i] = arr[j];
+                arr[j] = z;
             }
-        z = arr[i];
-        arr[i] = arr[min];
-        arr[min] = z;
         }
     }
     for (int h=0;h<4;h++){
