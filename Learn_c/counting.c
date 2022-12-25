@@ -12,7 +12,7 @@ int main()
     printf("ENTREZ NMR DES OBJECTS YOU want to order: ");
     scanf("%d",&n);
     for(int i=0;i<=np-2;i++){
-        for(int j=i+1;j<=np;j++){
+        for(int j=i+1;j<=np-1;j++){
             if(arr[j]<arr[i]){
                 w = arr[i];
                 arr[i] = arr[j];
@@ -23,5 +23,6 @@ int main()
     for(int i=0;i<n;i++){
         printf("%d\n",arr[i]);
     }
+    printf("%d",x);
 
 }
