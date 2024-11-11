@@ -6,7 +6,7 @@ int main ()
     for(int i=2;i<=10;i++){
         j=i;
          while(arr[j]>0 && (arr[j-1]>arr[j])){
-             //use decalage ::
+             //use decalage :: 
             x = arr[j];
             arr[j] = arr[j-1];
             arr[j-1] = x;
