@@ -21,7 +21,7 @@ int main(){
     insertionSort(arr,n*m);
     Put_array_in_Matrix(n,m,Matrix,arr);
     Print_Matrix(n,m,Matrix);
-     printf("<-------- done it with insertionSort -------->\n");
+    printf("<-------- done it with insertionSort -------->\n");
 
     
 }
