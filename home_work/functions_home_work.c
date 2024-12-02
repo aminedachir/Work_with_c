@@ -8,15 +8,6 @@ int Register_Matrix(int n,int m,int Matrix[n][m]){
         }
     }
 }
-int Print_Matrix_V0(int n,int m, int Matrix[n][m]){
-    printf("<------------This is the unsorted Matrix-------->\n");
-    for (int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-            printf("%d ",Matrix[i][j]);
-        }
-    printf("\n");    
-    }
-}
 int Put_Matrix_in_array(int n,int m,int Matrix[n][m],int arr[n*m]){
     int k=0;
     for(int i=0;i<n;i++){ 
@@ -79,12 +70,11 @@ int Put_array_in_Matrix(int n,int m,int Matrix[n][m],int arr[n*m]){
         }
     }
 }
-void Print_Matrix(int n,int m,int Matrix[n][m]) {
-    printf("\n<--------This is the Sorted matrix--------->\n");
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            printf("%d ", Matrix[i][j]);
+int Print_Matrix(int n,int m, int Matrix[n][m]){
+    for (int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",Matrix[i][j]);
         }
-        printf("\n");
+    printf("\n");    
     }
 }
