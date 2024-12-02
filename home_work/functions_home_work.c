@@ -1,7 +1,7 @@
 #include <stdio.h>
 int n,m;
 int Register_Matrix(int n,int m,int Matrix[n][m]){
-    printf("<-----Enter The MAtrix line by line and the numbers separated by ','----->\n");
+    //printf("<-----Enter The MAtrix line by line and the numbers separated by ','----->\n");
     for (int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             scanf("%d,",&Matrix[i][j]);
